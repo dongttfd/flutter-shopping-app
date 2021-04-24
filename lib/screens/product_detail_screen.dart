@@ -6,8 +6,6 @@ import 'package:shopping/providers/products.dart';
 class ProductDetailScreen extends StatelessWidget {
   static const routeName = '/product';
 
-  // ProductDetailScreen(this.product);
-
   @override
   Widget build(BuildContext context) {
     final product = Provider.of<Products>(
@@ -18,7 +16,7 @@ class ProductDetailScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: Text(product.title),
-      ),
+      ),     
     );
   }
 }
